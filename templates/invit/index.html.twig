@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}vos invitations{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+            <div class="containner text-center">
+                <div class="jumbotron">
+                    <h1>vos invitations</h1>
+                    <a href="/invit/send" class="btn btn-warning"> Envoyer une invitation</a>
+                </div>
+            </div>
+        {% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
